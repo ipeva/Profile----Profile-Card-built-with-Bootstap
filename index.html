@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by ipeva (http://jsbin.com/mumohef/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="MyProfileCard">
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+@import url('https://fonts.googleapis.com/css?family=Lemonada');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background: url('http://i.imgur.com/Ke8bl0J.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  [if !IE] justify-content: center;
+  [if IE] margin: auto auto;
+  align-items: center;
+  font-family: 'Lemonada', cursive;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+  border: solid 4px white;
+  background-color: #ffa;
+  transition: all 1.5s ease-in-out;
+}
+
+img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.3, 1.3);
+}
+
+.profile-box {
+  display: block;
+  min-width: 360px;
+  max-width: 70vw;
+  background-color: rgba(180,100,220,0.4);
+  text-align: center;
+  border-radius: 10px;
+  height: 90vh;
+  padding-top: 20px;
+  overflow-x: auto;
+}
+
+h1, h2 {
+  color: white;
+  opacity: 1;
+}
+
+h1 {
+  font-size: 40px;
+  transition: all 0.8s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.15);
+  color: lightgreen;
+}
+
+h2 {
+  font-size: 22px;
+  border: outset;
+  padding: 10px 5px 10px 5px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+h2:hover {
+  color: black;
+  border: inset;
+}
+
+.text-area {
+  color: lightblue;
+  opacity: 1;
+  text-align: justify;
+  padding: 10px 30px;
+  border-top: 5px double;
+  border-bottom: 2px dotted;
+}
+
+p:hover {
+  font-size: 105%;
+}
+
+.links {
+  font-size: 20px;
+}
+
+i {
+  transition: all 0.8s ease-in-out;
+  color: green;
+}
+
+i:hover {
+  transform: scale(1.4);
+  color: blue;
+}
+
+a {
+  opacity: 0.4;
+}
+</style>
+</head>
+<body>
+    <div class="profile-box container">
+      <div class="profile-header">
+        <img class="img-circle" src="http://i.imgur.com/hNRNIEn.jpg" alt="Profil image">
+        <h1>Péva István</h1>
+        <h2>Képesített könyvelő, Statisztikus, Vállalati tervező, Géplakatos</h2>
+        <h2><span class="glyphicon glyphicon-map-marker"></span> Tataháza, HU</h2>
+      </div>
+      <div class="content">
+        <p class="text-area">
+          Szeretek programozni, jelenlegi munkahelyemen weblapokat tartok karban. Szívesen tanulok új programnyelveket, írok kisebb softwareket, többnyire saját részre. Fémipari szakmám már szinte egyáltalán nem űzöm. Szeretnék teljes mértékben áttérni a programozásra.
+        </p>
+        <section class="links">
+          <ul class="pagination">
+            <li><a href="https://facebook.com/#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp&nbsp</li>
+            <li><a href="mailto:ipeva@freemail.hu"><i class="fa fa-envelope-o"></i></a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+</body>
+</html>
