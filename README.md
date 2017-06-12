@@ -8,4 +8,4 @@ Profile Card with Bootstap
 - CSS
 
 # Project view link:
-https://ipeva.github.io/Profile----Profile-Card-built-with-Bootstap/
+https://ipeva.github.io/Profile-Profile-Card-built-with-Bootstap/
